@@ -13,4 +13,6 @@ public interface RetrofitInterface {
     @GET("MyHotixHouseKeeping/login?")
     Call<User> getAnswersQuery(@Query("login") String login, @Query("password") String password);
 
+    @GET("myhotixguest/getfacture?")
+    Call<Facture> getFactureQuery(@Query("chambre") String chambre);
 }
