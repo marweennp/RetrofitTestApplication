@@ -1,5 +1,6 @@
 package com.hotix.retrofittestapplication;
 
+import java.util.ArrayList;
 import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
@@ -8,16 +9,16 @@ public class Facture {
 
     @SerializedName("data")
     @Expose
-    private List<FactureData> data = null;
+    private ArrayList<FactureData> data = null;
     @SerializedName("status")
     @Expose
     private Boolean status;
 
-    public List<FactureData> getData() {
+    public ArrayList<FactureData> getData() {
         return data;
     }
 
-    public void setData(List<FactureData> data) {
+    public void setData(ArrayList<FactureData> data) {
         this.data = data;
     }
 
